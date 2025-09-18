@@ -1,0 +1,139 @@
+body {
+background-color: rgb(90, 90, 90);
+
+
+}
+
+.wasd:hover {
+    background-color: rgb(0, 0, 0);
+    outline: 3px solid rgb(255, 255, 255);
+    transform: rotate3d(20deg);
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.wasd {
+    background-color: rgb(131, 131, 131);
+    width:  500px;
+    height: 300px;
+    margin: 200px auto;
+    border-radius: 10px;
+    transition: all 1s ease-out;
+}
+
+h1 {
+    height: 1px;
+    width: 1px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    margin-right: 190px auto;
+
+
+    
+}
+input {
+    margin-right: 190px auto;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    position: relative;
+    animation: moveBox 3s ease-in-out infinite;
+    border-radius: 10px;
+    align-items: center;
+    margin: 50px;
+}
+@keyframes moveBox {
+    0% {
+        transform: translateX(-2100);
+    }
+    80% {
+        transform: translateX(2100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+.animated-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 10px auto;
+    animation: fadeIn 10000s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    form {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+    border: 20px auto;
+    border-radius: 10px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+@keyframes spin {
+   0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.animated-box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+    border-radius: 20px auto;
+    stroke-width: 8;
+   stroke-dasharray: 80;
+   stroke-dashoffset: 80;
+   animation: infinite;
+}
+.loading {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid rgb(0, 81, 255);
+    border-radius: 50%;
+    margin: 100px auto;
+    animation: loading 1s linear infinite;
+    display: block;
+    margin: 100px auto;
+}
+.loading circle {
+   fill: none;
+   stroke: rgb(0, 0, 0);
+   stroke-width: 8;
+   stroke-dasharray: 80;
+   stroke-dashoffset: 80;
+}
+
+@keyframes loading {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.box1:hover{
+    background-color: black;
+    transition: all 1s ease-out;
+}
+.h1:hover {
+    background-color: cornflowerblue;
+    transition: all 1s ease-out;
+}
