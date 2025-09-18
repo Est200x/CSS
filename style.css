@@ -1,0 +1,66 @@
+body {
+ 
+  background-image: url(https://images.hdqwalls.com/download/himalayas-mountains-landscape-4k-f3-2560x1440.jpg)
+
+
+
+
+}
+
+.Login {
+  background-color: cornsilk;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgb(255, 255, 255)
+  
+
+
+}
+
+.Login input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+
+
+  
+}
+
+h1{
+  text-align: center;
+  align-items: center;
+  font-style: normal;
+  padding: 20px;
+
+}
+
+.Login button {
+  margin: 30px;
+  border-radius: 20px;
+  border-color: rgb(0, 0, 0);
+  width: 150px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+
+}
+
+.Information {
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  font-style: normal;
+}
+
+span {
+  font-size: larger;
+
+}
+
+
+
+
+
+
