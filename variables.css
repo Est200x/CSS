@@ -1,0 +1,62 @@
+/* ==========================================================
+   variables.css
+   ไฟล์กลางเก็บ CSS variables ที่ใช้ร่วมกันทุกไฟล์ในระบบนี้
+   ให้ทุกไฟล์ธีม (animations-showcase, login-form-dark,
+   red-glow-hero, login-mountain-theme) @import ไฟล์นี้ไว้บนสุด
+   แล้วอ้างอิงด้วย var(--ชื่อ) แทนการเขียนค่าตายตัวซ้ำ ๆ
+
+   วิธีใช้ใน HTML ถ้าไม่ได้ผ่าน build tool:
+   <link rel="stylesheet" href="variables.css">
+   <link rel="stylesheet" href="animations-showcase.css">
+   (ใส่ variables.css ก่อนไฟล์อื่นเสมอ)
+   ========================================================== */
+
+:root {
+    /* พื้นฐาน: ขาว-ดำ-เทา */
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --color-off-white: #f5f5f5;
+    --color-gray-bg: rgb(90, 90, 90);
+    --color-gray-mid: rgb(131, 131, 131);
+    --color-gray-border: #ccc;
+
+    /* โทนฟ้า (ใช้ใน animations-showcase, login-form-dark) */
+    --color-blue-accent: #3498db;
+    --color-blue-hover: cornflowerblue;
+    --color-blue-spinner: rgb(0, 81, 255);
+
+    /* โทนแดง (ใช้ใน red-glow-hero) */
+    --color-red: #ff0000;
+    --color-red-dark: #800000;
+    --color-red-light: #ff4d4d;
+    --color-red-darker: #b30000;
+    --glow-red: rgba(255, 0, 0, 0.6);
+    --glow-red-strong: rgba(255, 0, 0, 0.8);
+
+    /* โทนอบอุ่น (ใช้ใน login-mountain-theme) */
+    --color-cornsilk: cornsilk;
+
+    /* ค่าความโค้งมุม ใช้ scale เดียวกันทุกไฟล์ */
+    --radius-sm: 10px;
+    --radius-md: 20px;
+    --radius-lg: 30px;
+    --radius-round: 50%;
+
+    /* transition มาตรฐาน */
+    --transition-base: all 1s ease-out;
+    --transition-fast: 0.3s ease;
+
+    /* ฟอนต์หลัก */
+    --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* เพิ่มสำหรับหน้าที่ต้องการดีไซน์เฉพาะตัว (เช่น hellstar-login.html) */
+    --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
+    --font-body: 'Inter', var(--font-base);
+    --color-bg-rich-black: #0a0a0a;
+    --letter-spacing-wide: 0.08em;
+}
+
+/* reset พื้นฐานร่วมกันทุกหน้า */
+* {
+    box-sizing: border-box;
+}
